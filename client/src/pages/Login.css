@@ -1,0 +1,276 @@
+.login-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.login-breadcrumb {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 30px;
+  text-align: right;
+}
+
+.login-breadcrumb a {
+  color: #666;
+  text-decoration: none;
+}
+
+.login-breadcrumb a:hover {
+  color: #333;
+}
+
+.login-title {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.login-box {
+  border: 1px solid #e5e5e5;
+  padding: 40px;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* 회원 로그인 */
+.member-login {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.login-form {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.form-inputs {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-input {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.login-input:focus {
+  border-color: #333;
+}
+
+.remember-email {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  color: #666;
+  cursor: pointer;
+}
+
+.remember-email input {
+  cursor: pointer;
+}
+
+.btn-login {
+  width: 150px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-login:hover {
+  background-color: #555;
+}
+
+.btn-login:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+/* 소셜 로그인 */
+.social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.btn-social {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-social:hover {
+  background-color: #f9f9f9;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 15px;
+  border-radius: 4px;
+}
+
+.social-icon.naver {
+  background-color: #03c75a;
+  color: #fff;
+}
+
+.social-icon.kakao {
+  background-color: #fee500;
+  color: #000;
+}
+
+.social-icon.google {
+  background-color: #fff;
+  color: #4285f4;
+  border: 1px solid #ddd;
+}
+
+.btn-naver:hover {
+  border-color: #03c75a;
+}
+
+.btn-kakao:hover {
+  border-color: #fee500;
+}
+
+.btn-google:hover {
+  border-color: #4285f4;
+}
+
+/* 하단 링크 */
+.login-links {
+  display: flex;
+  gap: 10px;
+}
+
+.link-btn {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.link-btn:hover {
+  background-color: #f5f5f5;
+}
+
+.link-btn.active {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+.link-btn.active:hover {
+  background-color: #555;
+}
+
+/* 비회원 주문조회 */
+.guest-order {
+  margin-top: 40px;
+}
+
+.guest-form {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.guest-form .form-inputs {
+  flex: 1;
+}
+
+.btn-confirm {
+  width: 150px;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-confirm:hover {
+  background-color: #f5f5f5;
+}
+
+.guest-notice {
+  font-size: 12px;
+  color: #999;
+}
+
+.guest-notice::before {
+  content: 'ⓘ ';
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 20px 15px;
+  }
+
+  .login-box {
+    padding: 20px;
+  }
+
+  .login-form {
+    flex-direction: column;
+  }
+
+  .btn-login {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .guest-form {
+    flex-direction: column;
+  }
+
+  .btn-confirm {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .login-links {
+    flex-direction: column;
+  }
+}

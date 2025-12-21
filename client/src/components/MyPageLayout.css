@@ -1,0 +1,184 @@
+.mypage-layout {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+.mypage-loading {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px;
+  text-align: center;
+  color: #888;
+}
+
+/* 브레드크럼 */
+.mypage-breadcrumb {
+  text-align: right;
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 30px;
+}
+
+.mypage-breadcrumb a {
+  color: #888;
+}
+
+.mypage-breadcrumb a:hover {
+  color: #333;
+}
+
+/* 컨테이너 */
+.mypage-container {
+  display: flex;
+  gap: 50px;
+}
+
+/* 사이드바 */
+.mypage-sidebar {
+  width: 220px;
+  flex-shrink: 0;
+}
+
+.sidebar-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #333;
+}
+
+/* 회원 카드 */
+.member-card {
+  background: #f8f8f8;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.member-greeting {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.member-greeting strong {
+  font-weight: 600;
+}
+
+.member-grade {
+  font-size: 12px;
+  color: #666;
+}
+
+.member-grade strong {
+  color: #333;
+}
+
+/* 사이드바 섹션 */
+.sidebar-section {
+  margin-bottom: 25px;
+}
+
+.sidebar-section .section-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  margin-bottom: 8px;
+}
+
+.sidebar-menu li a {
+  display: block;
+  font-size: 13px;
+  color: #666;
+  text-decoration: none;
+  padding: 5px 0;
+  padding-left: 10px;
+  transition: all 0.2s;
+}
+
+.sidebar-menu li a:hover {
+  color: #333;
+}
+
+.sidebar-menu li.active a {
+  color: #333;
+  font-weight: 600;
+}
+
+/* 메인 콘텐츠 */
+.mypage-content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* 반응형 */
+@media (max-width: 900px) {
+  .mypage-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .mypage-sidebar {
+    width: 100%;
+  }
+
+  .sidebar-title {
+    font-size: 20px;
+  }
+
+  .member-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .member-greeting {
+    margin-bottom: 0;
+  }
+
+  /* 모바일에서 사이드바 메뉴 가로 스크롤 */
+  .sidebar-section {
+    margin-bottom: 15px;
+  }
+
+  .sidebar-section .section-title {
+    font-size: 13px;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+  }
+
+  .sidebar-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 15px;
+  }
+
+  .sidebar-menu li {
+    margin-bottom: 0;
+  }
+
+  .sidebar-menu li a {
+    padding: 5px 10px;
+    font-size: 12px;
+    background: #f5f5f5;
+    border-radius: 3px;
+  }
+
+  .sidebar-menu li.active a {
+    background: #333;
+    color: #fff;
+  }
+}
